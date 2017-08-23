@@ -8,4 +8,8 @@ public class FakeBean {
     public int thisShouldReturnFive(String fakeInput){
         return 5;
     }
+
+    public String thisShouldRetunNull(){
+        return null;
+    }
 }
