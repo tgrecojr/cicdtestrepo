@@ -19,4 +19,9 @@ public class FakeBeanTest {
         assertThat(5).isEqualTo(fakeBean.thisShouldReturnFive(""));
     }
 
+    @Test
+    public void thisShouldRetunNull(){
+        assertThat(fakeBean.thisShouldRetunNull()).isNullOrEmpty();
+    }
+
 }
