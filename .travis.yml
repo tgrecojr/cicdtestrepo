@@ -1,6 +1,9 @@
 language: java
 jdk:
  - oraclejdk8
+branches:
+  only:
+    - devel
 notifications:
   slack:
     secure: Dn3ObdqquKUshWPwJnrPtrWA0oaXNip4tJhSoWTxLPzJ2Ai22rPu31fIEajhnPKFNQiNXlbR1Tryufw6Qo+X4fRh3WLGdyPOODweDcwt8zMNVqzSb4OuLxwiMJlb2FT5LACPKCBHNxQqqk2uwtQ19LA46ORkK30tW+eFkfqqDMbcUHnq4E0KhR7lcl/W+IirfraE10earij6BkxqN/2kAz9yorA5zR9lzgZUEbs5Ba/8mVKhVmqSSP+pOz1pOByriQkB1+99ENkN1s+47JBwR+3ZlRpCDlaeNxEY+aPiqdpNrsLbAEmJUNIIZkA979UbWX5upAvJb7GGWAIM/sHhne0+DewVoMHkIPpF/xgsiA6W0vV2zddJZSH+3IT89CwGjDEaNfUpsJykv5ie8MqikKvrZfNBn9IKlH1Gdm/L2QhY8NEzm2JTovbriW5M7jdRVSpLVD6h0/ebRDNojaJuNv+UV6f712NmnJKZm1JNC2eBWe5NaucgZDfx2/3e0cRNeqb4AgFy1+BQ0vl91VIZyuw6R/YFIBNfHgiERouWVkX9FELtMzEYpWPmVUSYZIrPCskLdJ/O4GuxH8hcH94jZrBV6Vv/gJjYbAFKnF37sHB6rj+AQLg2RoAV5G5QpxpMMAXXSvwirpfk012y7fpBeqTCjNL52OYXx+qlMtym1dg= 
