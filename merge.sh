@@ -30,6 +30,10 @@ if [ "$CURRENT_BRANCH" = "$FROM_BRANCH" ] ; then
     # Checkout the latest stable
     git fetch origin $TO_BRANCH:$TO_BRANCH && \
     git checkout $TO_BRANCH && \
+    export GIT_TAG=$TRAVIS_BRANCH-$TRAVIS_BUILD_NUMBER && \
+    git tag -a $GIT_TAG -m "Automatic tagging from Travis" && \
+    git push --tags $PUSH_URL && \
+    
 
     # Merge the dev into latest stable
     echo "Merging changes..." && \
