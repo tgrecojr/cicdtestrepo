@@ -36,6 +36,8 @@ if [ "$CURRENT_BRANCH" = "$FROM_BRANCH" ] ; then
     git merge $FROM_BRANCH && \
 
     # Push changes back to remote vcs
+    export GIT_TAG=$TRAVIS_BRANCH-$TRAVIS_BUILD_NUMBER
+    git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
     echo "Pushing changes..." && \
     git push $PUSH_URL && \
     echo "Merge complete!" || \
