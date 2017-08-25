@@ -25,6 +25,6 @@ public class CicdtestrepoApplication implements CommandLineRunner {
 	public void run(String[] args) throws Exception {
 		logger.info("Starting Test Application");
 		logger.info("FakeBean return: " + fakeBean.thisShouldReturnFive(""));
-		logger.info("another message");
+		//logger.info("another message");
 	}
 }
